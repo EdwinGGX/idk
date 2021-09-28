@@ -18,7 +18,7 @@ Note -⟩ We Only Accept Upi And Crytpo</b>");
 
 $nopre = urlencode("<b>YOU NEED TO BE PREMIUM TO USE THIS COMMAND.
 Hit /buy to purchase</b>");
-$botToken =  "1816615315:AAH9_Zh6dtekxEVm_b_cIACCVYML0Dp8e88";
+$botToken =  "1937425755:AAEYfpzKYMtz2a-6dEHJ3Sgu7hiwESY-wE4";
 $website = "https://api.telegram.org/bot".$botToken;
 $update = file_get_contents('php://input');
 echo $update;
@@ -73,7 +73,7 @@ Mass <code>.mass</code>[<i>$islive</i>]
 Razorpay <code>.rp</code>[<i>$islive</i>]
 </b>");
 $free = json_encode($keyboard);
-        file_get_contents("https://api.telegram.org/bot1816615315:AAH9_Zh6dtekxEVm_b_cIACCVYML0Dp8e88/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
+        file_get_contents("https://api.telegram.org/bot1937425755:AAEYfpzKYMtz2a-6dEHJ3Sgu7hiwESY-wE4/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
 
 }
 if ($cdata2 == "paid"){
@@ -102,7 +102,7 @@ SK Mass <code>.mchk</code>[<i>$isalive</i>]
 Auth <code>.aut</code>[<i>$islive</i>]
 </b>");
 $free = json_encode($keyboard);
-        file_get_contents("https://api.telegram.org/bot1816615315:AAH9_Zh6dtekxEVm_b_cIACCVYML0Dp8e88/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
+        file_get_contents("https://api.telegram.org/1937425755:AAEYfpzKYMtz2a-6dEHJ3Sgu7hiwESY-wE4/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
 
 }
 if ($cdata2 == "others"){
@@ -132,7 +132,7 @@ $freecommands = urlencode("<b>->> <code>.credits</code> Know Your Available Cred
 
 Note-⟩ If you get any type of bugs in this bot please inform our team at @r0ld3xrobot</b>");
 $free = json_encode($keyboard);
-        file_get_contents("https://api.telegram.org/bot1816615315:AAH9_Zh6dtekxEVm_b_cIACCVYML0Dp8e88/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
+        file_get_contents("https://api.telegram.org/bot1937425755:AAEYfpzKYMtz2a-6dEHJ3Sgu7hiwESY-wE4/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
 
 }
 if ($cdata2 == "buy"){
@@ -150,12 +150,12 @@ $freecommands = urlencode("<b>Use <code>.credits</code> Know Your Available Cred
 -> 1000 CREDITS + PREMIUM ACCESS - 25$
 Note-⟩ We Only Accept [UPI][GIFT CARDS][CRYTPO]</b>");
 $free = json_encode($keyboard);
-        file_get_contents("https://api.telegram.org/bot1816615315:AAH9_Zh6dtekxEVm_b_cIACCVYML0Dp8e88/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
+        file_get_contents("https://api.telegram.org/bot1937425755:AAEYfpzKYMtz2a-6dEHJ3Sgu7hiwESY-wE4/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
 
 }
 elseif ($cdata2 == "end"){ 
 $finalize = urlencode("<b>Inline Mode Closed  <a href='tg://user?id=$gId'>$firstname</a></b>"); 
-file_get_contents("https://api.telegram.org/bot1816615315:AAH9_Zh6dtekxEVm_b_cIACCVYML0Dp8e88/editMessageText?chat_id=$cchatid2&text=$finalize&message_id=$cmessage_id2&parse_mode=HTML");
+file_get_contents("https://api.telegram.org/bot1937425755:AAEYfpzKYMtz2a-6dEHJ3Sgu7hiwESY-wE4/editMessageText?chat_id=$cchatid2&text=$finalize&message_id=$cmessage_id2&parse_mode=HTML");
 }
 if($sender_chat == 'channel'){
 exit();
@@ -198,7 +198,7 @@ THIS BOT IS MADE WITH ♥️ BY  <code>@r0ld3x</code> </b>",
         exit();
 }
 
-$premium_id = (array("1792903396","1317173146"));
+$premium_id = (array("1143889904","1317173146"));
 $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298504199","-1001434792768"));
         $keyboard = json_encode([
 'inline_keyboard' => [
@@ -342,7 +342,7 @@ if($link === false){
 
 
 function bot($method,$datas=[]){
-    $url = "https://api.telegram.org/bot1816615315:AAH9_Zh6dtekxEVm_b_cIACCVYML0Dp8e88/".$method;
+    $url = "https://api.telegram.org/bot1937425755:AAEYfpzKYMtz2a-6dEHJ3Sgu7hiwESY-wE4/".$method;
     $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
